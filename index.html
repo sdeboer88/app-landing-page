@@ -1,5 +1,6 @@
 <html>
 	<head>
+        https://themeforest.net/item/appy-app-landing-psd-template/19732944
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
@@ -103,7 +104,7 @@ padding-top: 70px;
 		<div class="container hero">
 		  <div class="row">
 		    <div class="col-5">
-		    <p><img src="assets/img/iphone.png" class="img-fluid" alt=""></p>
+		    <p><img src="assets/img/iphone-bg.png" class="img-fluid" alt=""></p>
 		    </div>
 		    <div class="col-7">
 		      <h1>Start your amazing<br/>stuff through appy.</h1>
@@ -151,24 +152,63 @@ padding-top: 70px;
 
 <style>
     #progress{
-        background-color: #f5f6ff;
-        padding-top: 115px;
+        padding-top: 110px;
+        position: relative;
+        background: #f5f6ff url("assets/img/appy-image.png") no-repeat center right;
+
     }
     #progress h2{
-        font-size: 25px;
-        font-weight: 300;
+        font-size: 35px;
+        font-weight: 400;
         padding-bottom: 25px;
+    }
+    #progress .progesstext{
+        color:#6d7999;
+        font-size: 20px;
+        line-height:36px;
+        padding-bottom: 60px;
+    }
+
+    .btn-round{
+        border-radius: 50px;
+        font-size: 14px;
+        text-transform: uppercase;
+        padding:18px 60px;
+        margin-bottom: 145px;
+        letter-spacing: 0.15em;
+        border:none;
+    }
+
+    .btn-gradient{
+        background-color: #0D0E82;
+        background: -webkit-linear-gradient(#68bced, #4d41c6); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(#68bced, #4d41c6); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(#68bced, #4d41c6); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to right, #68bced, #4d41c6); /* Standard syntax */
+    }
+    #ps-top{
+        position: absolute;
+        top:-183px;
     }
 </style>
 <section id="progress">
     <div class="container">
-        <p>
-            <small class="text-uppercase" style="font-weight: 700;color:#666;">Our Progress</small>
-        </p>
-        <h2>Great Application Ever</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiing elit, sed do<br/>eiusmod tempor incididunt ut labore et
-            laborused sed do<br/>eiusmod tempor incididunt ut labore et laborused.</p>
-        <p><a href="#" class="btn btn-primary text-uppercase">Learn More</a></p>
+        <div class="row">
+            <div class="col">
+                <p>
+                    <small class="text-uppercase" style="font-weight: 700;color:#666;">Our Progress</small>
+                </p>
+                <h2>Great Application Ever</h2>
+                <p class="progesstext">Lorem ipsum dolor sit amet, consectetur adipiing elit, sed do<br/>eiusmod tempor incididunt ut labore et
+                    laborused sed do<br/>eiusmod tempor incididunt ut labore et laborused.</p>
+                <p><a href="#" class="btn btn-primary text-uppercase btn-round btn-gradient">Learn More</a></p>
+            </div>
+
+            <div class="col">
+                    <p id="ps-top"><img src="assets/img/iphone-bg.png" class="img-fluid" alt=""></p>
+            </div>
+        </div>
+
     </div>
 
 </section>
