@@ -9,11 +9,12 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 	header{
-		background: url("assets/img/bg.jpg") no-repeat top center;
-		background-size: cover;
+		/*background: url("assets/img/bg.jpg") no-repeat top center;*/
+		/*background-size: cover;*/
+        background: linear-gradient(-135deg, #7cc5e7, #614ac0);
 		height: 900px;
 		padding-top: 25px;
 	}
@@ -143,10 +144,30 @@ padding-top: 70px;
         color:#6d7999;
         font-weight: 300;
     }
+
+.about-appy-title:after {
+    display: inline-block;
+    margin: 0 0 4px 20px;
+    height: 1px;
+    content: " ";
+    text-shadow: none;
+    background-color: #fff;
+    width: 50px;
+}
+.about-appy-title:before {
+    display: inline-block;
+    margin: 0 20px 4px 0;
+    height: 1px;
+    content: " ";
+    text-shadow: none;
+    background-color: #fff;
+    width: 50px;
+}
+
 </style>
 <section id="about" class="text-center">
   <div id="logo-icon"><img src="assets/img/app-logo.png" alt=""></div>
-    <p id="about-appy" style="padding-bottom:20px;"><small class="text-uppercase" style="font-weight:700;color:#666;">About Appy</small></p>
+    <p id="about-appy" style="padding-bottom:20px;" class="about-appy-title"><small class="text-uppercase" style="font-weight:700;color:#666;">About Appy</small></p>
     <p class="lead">A beautiful app for consectetur adipisicing elit, sed do<br/>eiusmod tempor incididunt ut mollit anim id
     est laborum.<br/>Sedut perspiciatis unde omnis.</p>
     <p class="lead-sub">Lorem ipsum dolor sit amet, consectetur adipiing elit, sed do eiusmod tempor incididunt ut<br/>labore et laborused
@@ -194,12 +215,24 @@ padding-top: 70px;
         position: absolute;
         top:-183px;
     }
+
+.progress-titles:after {
+    display: inline-block;
+    margin: 0 0 4px 20px;
+    height: 1px;
+    content: " ";
+    text-shadow: none;
+    background-color: #e1e1e1;
+    width: 50px;
+}
+
+
 </style>
 <section id="progress">
     <div class="container">
         <div class="row">
             <div class="col">
-                <p>
+                <p class="progress-titles">
                     <small class="text-uppercase" style="font-weight: 700;color:#666;">Our Progress</small>
                 </p>
                 <h2>Great Application Ever</h2>
@@ -231,6 +264,17 @@ padding-top: 70px;
         padding-right: 90px;
     }
 
+.video-titles:after {
+    display: inline-block;
+    margin: 0 0 4px 20px;
+    height: 1px;
+    content: " ";
+    text-shadow: none;
+    background-color: #e1e1e1;
+    width: 50px;
+}
+
+
 </style>
     <section id="video-features">
         <div class="container">
@@ -242,7 +286,7 @@ padding-top: 70px;
                 </div>
 
                 <div id="video-content" class="col">
-                    <p>
+                    <p class="video-titles">
                         <small class="text-uppercase" style="font-weight: 700;color:#666;">Video Features</small>
                     </p>
                     <h2>Great Application Ever</h2>
@@ -262,7 +306,7 @@ padding-top: 70px;
         color:#fff;
         height:955px;
         position: relative;
-        margin-bottom: 50px;
+        margin-bottom: 190px;
     }
     #main-features h2{
         font-size:35px;
@@ -284,7 +328,7 @@ padding-top: 70px;
 
     #main-features li{
         font-size: 16px;
-        line-height:28px;
+
         font-weight:300;
         margin-bottom: 45px;
     }
@@ -292,12 +336,21 @@ padding-top: 70px;
     .white-bg{
         background-color: #fff;
         border-radius: 50px;
-        padding:25px;
+        position: relative;
+        height:70px;
+        width:70px;
     }
 
-    .media-body{
-        padding-top: 10px;
+    .white-bg .fa{
+        color:#5e88fc;
+        font-size: 1.5em;
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
     }
+
+
 
     .media-body h5{
         padding-bottom: 12px;
@@ -311,13 +364,45 @@ padding-top: 70px;
         margin-bottom: 60px;
     }
 
+    #main-features .white-bg:hover{
+        background: linear-gradient(to right, #68bfee, #4c40c5);
+    }
+
+    #main-features .white-bg:hover .fa{
+        color:#fff;
+    }
+
+    .rotate45{
+        /*transform: rotate(45deg);*/
+        transform: translate(-50%,-50%) rotate(45deg)!important;
+    }
+
+
+.titles:after {
+    display: inline-block;
+    margin: 0 0 4px 20px;
+    height: 1px;
+    content: " ";
+    text-shadow: none;
+    background-color: #fff;
+    width: 50px;
+}
+.titles:before {
+    display: inline-block;
+    margin: 0 20px 4px 0;
+    height: 1px;
+    content: " ";
+    text-shadow: none;
+    background-color: #fff;
+    width: 50px;
+}
 
 </style>
     <section id="main-features">
         <div class="container">
             <div class="row text-center">
                 <div class="col">
-                    <p>
+                    <p class="titles">
                         <small class="text-uppercase" style="font-weight: 700;">Features</small>
                     </p>
                     <h2>Powerful Features As Always</h2>
@@ -328,7 +413,8 @@ padding-top: 70px;
                     <ul class="list-unstyled">
                         <li class="media">
                             <span class="white-bg  mr-3">
-                              <img class="d-flex" src="assets/img/alarm-clock.png" alt="Generic placeholder image">
+                                <i class="fa fa-rocket" aria-hidden="true"></i>
+                              <!-- <img class="d-flex" src="assets/img/alarm-clock.png" alt="Generic placeholder image"> -->
                             </span>
                             <div class="media-body">
                                 <h5 class="mt-0 mb-1">Fast &amp; Powerful</h5>
@@ -337,7 +423,7 @@ padding-top: 70px;
                         </li>
                         <li class="media">
                             <span class="white-bg  mr-3">
-                              <img class="d-flex" src="assets/img/alarm-clock.png" alt="Generic placeholder image">
+                              <i class="fa fa-paperclip rotate45" aria-hidden="true"></i>
                             </span>
                             <div class="media-body">
                                 <h5 class="mt-0 mb-1">Fast &amp; Powerful</h5>
@@ -346,7 +432,7 @@ padding-top: 70px;
                         </li>
                         <li class="media">
                             <span class="white-bg  mr-3">
-                              <img class="d-flex" src="assets/img/alarm-clock.png" alt="Generic placeholder image">
+                              <i class="fa fa-cloud-upload" aria-hidden="true"></i>
                             </span>
                             <div class="media-body">
                                 <h5 class="mt-0 mb-1">Fast &amp; Powerful</h5>
@@ -362,7 +448,7 @@ padding-top: 70px;
                     <ul class="list-unstyled" style="padding-left:50px;">
                         <li class="media">
                             <span class="white-bg  mr-3">
-                              <img class="d-flex" src="assets/img/alarm-clock.png" alt="Generic placeholder image">
+                              <i class="fa fa-clock-o fa-fw" aria-hidden="true"></i>
                             </span>
                             <div class="media-body">
                                 <h5 class="mt-0 mb-1">Fast &amp; Powerful</h5>
@@ -371,7 +457,7 @@ padding-top: 70px;
                         </li>
                         <li class="media">
                             <span class="white-bg  mr-3">
-                              <img class="d-flex" src="assets/img/alarm-clock.png" alt="Generic placeholder image">
+                              <i class="fa fa-desktop" aria-hidden="true"></i>
                             </span>
                             <div class="media-body">
                                 <h5 class="mt-0 mb-1">Fast &amp; Powerful</h5>
@@ -380,7 +466,7 @@ padding-top: 70px;
                         </li>
                         <li class="media">
                             <span class="white-bg  mr-3">
-                              <img class="d-flex" src="assets/img/alarm-clock.png" alt="Generic placeholder image">
+                              <i class="fa fa-cog" aria-hidden="true"></i>
                             </span>
                             <div class="media-body">
                                 <h5 class="mt-0 mb-1">Fast &amp; Powerful</h5>
@@ -392,5 +478,213 @@ padding-top: 70px;
             </div>
         </div>
     </section>
+
+    <style>
+        #testimonials {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            color:#6d7999;
+            font-size: 16px;
+            line-height: 28px;
+        }
+
+        #testimonials .col-md-4{
+            position: relative;
+        }
+
+        #testimonials h4{
+            color:#5e88fc;
+            font-size: 20px;
+            font-weight: 300;
+        }
+
+        #testimonials .employee-title{
+            color:#aab0c5;
+            font-size: 16px;
+        }
+
+        #testimonials .shadow-card{
+            box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.1);
+            padding:30px;
+            padding-top: 60px;
+        }
+
+        #testimonials .media .rounded-circle{
+            position: absolute;
+            top:-40px;
+            margin-bottom: 20px;
+        }
+
+        #our-clients .text-uppercase{
+            color:#666666;
+        }
+
+        #our-clients h2{
+            color:#434345;
+        }
+
+ 
+
+.title-testimonial:after {
+    display: inline-block;
+    margin: 0 0 4px 20px;
+    height: 1px;
+    content: " ";
+    text-shadow: none;
+    background-color: #e1e1e1;
+    width: 50px;
+}
+.title-testimonial:before {
+    display: inline-block;
+    margin: 0 20px 4px 0;
+    height: 1px;
+    content: " ";
+    text-shadow: none;
+    background-color: #e1e1e1;
+    width: 50px;
+}
+
+
+    </style>
+
+    <section id="our-clients">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col">
+                    <p class="title-testimonial">
+                        <small class="text-uppercase" style="font-weight: 700;">Testimonials</small>
+                    </p>
+                    <h2>Our Clients Loves Us</h2>
+                </div>
+            </div>
+            <div id="testimonials" class="row">
+                <div class="col-md-4">
+                    <div class="shadow-card">                        
+                        <div class="media">
+                            <img src="http://via.placeholder.com/76x76" alt="" class="rounded-circle">
+                        </div>
+                        <h4>Ashraf Choudhuri</h4>
+                        <p class="employee-title">Art Director</p>
+                        <p>Lorem ipsum dolor sit amet, conseg sed do eiusmod temput laborelaborus ed sed do eiusmod tempo.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="shadow-card">                        
+                        <div class="media">
+                            <img src="http://via.placeholder.com/76x76" alt="" class="rounded-circle">
+                        </div>
+                        <h4>Ashraf Choudhuri</h4>
+                        <p class="employee-title">Art Director</p>
+                        <p>Lorem ipsum dolor sit amet, conseg sed do eiusmod temput laborelaborus ed sed do eiusmod tempo.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="shadow-card">                        
+                        <div class="media">
+                            <img src="http://via.placeholder.com/76x76" alt="" class="rounded-circle">
+                        </div>
+                        <h4>Ashraf Choudhuri</h4>
+                        <p class="employee-title">Art Director</p>
+                        <p>Lorem ipsum dolor sit amet, conseg sed do eiusmod temput laborelaborus ed sed do eiusmod tempo.</p>
+                    </div>
+                </div>                                
+            </div>
+        </div>
+    </section>
+
+    <style>
+        #screenshots{
+            background: linear-gradient(90deg, #4933c1, #66b4ea);
+            color:#fff;
+            font-family: 'Open Sans';
+        }
+
+        #screenshots .content{
+            padding-top: 270px;
+            padding-bottom: 320px;
+            font-weight: 300;
+        }
+
+        #screenshots .content p{
+            color:#fff;
+            font-size: 20px;
+            line-height: 36px;
+        }
+    </style>
+
+    <section id="screenshots">
+        <div class="container">
+            <div class="row">
+                <div class="col"></div>
+                <div class="col content">
+                    <p class="progress-titles">
+                        <small class="text-uppercase" style="font-weight: 700;">ScreenShota</small>
+                    </p>
+                    <h2>Screenshot 01</h2>
+                    <p class="white-text">Lorem ipsum dolor sit amet, consectetur adipiing elit, sed do eiusmod tempor incididunt ut labore et
+                        laborused sed do eiusmod tempor incididunt ut labore et laborused.</p>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+<style>
+    #our-features{
+        padding-top: 140px;
+    }
+</style>
+
+<section id="our-features">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                    <p class="video-titles">
+                        <small class="text-uppercase" style="font-weight: 700;color:#666;">Our Features</small>
+                    </p>
+                    <h2>Our Approach of Design is Pretty<br/>Simple and Clear</h2>
+                    <p class="blue-text" style="padding-bottom:20px;">Lorem ipsum dolor sit amet, consectetur adipiing elit, sed do eiusmod tempor incididunt ut labore et laborused sed do eiusmod tempor incididunt ut labore et laborused.</p>
+                    <p><a href="#" class="btn btn-primary text-uppercase btn-round btn-gradient">Learn More</a></p>
+            </div>
+            <div class="col">
+
+
+
+                    <ul class="list-unstyled" style="padding-left:50px;">
+                        <li class="media">
+                            <span class="white-bg  mr-3">
+                              <i class="fa fa-clock-o fa-fw" aria-hidden="true"></i>
+                            </span>
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1">Easy Notifications</h5>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            </div>
+                        </li>
+                        <li class="media">
+                            <span class="white-bg  mr-3">
+                              <i class="fa fa-desktop" aria-hidden="true"></i>
+                            </span>
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1">Fully Responsive</h5>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            </div>
+                        </li>
+                        <li class="media">
+                            <span class="white-bg  mr-3">
+                              <i class="fa fa-cog" aria-hidden="true"></i>
+                            </span>
+                            <div class="media-body">
+                                <h5 class="mt-0 mb-1">Editable Layout</h5>
+                                Lorem ipsum dolor sit amet,<br/> consectetur adipisicing elit,
+                            </div>
+                        </li>
+                    </ul>     
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
 	</body>
 </html>
